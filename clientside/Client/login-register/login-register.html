@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinterest Login</title>
+  <link rel="stylesheet" href="login-register.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>Pinterest</h2>
+    <div class="tabs">
+      <button id="loginTab" class="active">login</button>
+      <button id="registerTab">Register</button>
+    </div>
+
+    <form id="authForm">
+      <input type="text" id="username" placeholder="Username"  />
+      <input type="email" id="email" placeholder="Email" required/>
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">התחבר</button>
+    </form>
+    
+    <div id="message"></div>
+  </div>
+
+  <script src="login-register.js"></script>
+</body>
+</html>

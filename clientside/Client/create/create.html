@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="create.css" />
+    <link rel="stylesheet" href="../common/common.css" />
+</head>
+<body>
+    <header>
+        <img src="../images/pinterst.png" class="imglogo" alt="לוגו פינטרסט">
+     <nav>
+        <a href="../home/home.html">HOME</a>
+                  <a href="../profil/profil.html">PROFIL</a>
+        <a href="#" id="logoutBtn">LOG OUT</a>
+        <a href="create.html" id="create">CREATE</a>
+      </nav>
+      <div class="search-bar">
+          <input type="text" placeholder="חיפוש ..." />
+          <button>🔍</button>
+        </div>
+        
+    </header>
+ <main>
+      <div class="create-pin-container">
+        <div class="create-pin-header">
+          <h2>יצירת Pin</h2>
+          <button id="saveBtn" class="save-btn">שמור</button>
+
+        </div>
+    
+        <div class="create-pin-form">
+          <div class="left-section">
+            <label>כותרת</label>
+            <input type="text" placeholder="הכנס כותרת לפין שלך" id="title"/>
+    
+            <label>תיאור</label>
+            <textarea rows="4" placeholder="כתוב תיאור קצר" id="description"></textarea>
+    
+    
+         <button id="chooseTagsBtn">בחר תגיות</button>
+
+<!-- חלון קופץ -->
+<div id="tagsModal" class="modal" style="display:none">
+  <div class="modal-content">
+    <h3>בחר תגיות</h3>
+    <div id="modalTagsList" class="tags-list"></div>
+    <button id="loadMoreTagsBtn" type="button">הצג עוד</button>
+    <div class="modal-actions">
+      <button id="confirmTagsBtn" type="button">אישור</button>
+      <button id="cancelTagsBtn" type="button">ביטול</button>
+    </div>
+  </div>
+</div>
+
+<!-- כאן יופיעו התגיות שנבחרו -->
+<div id="selectedTags" class="selected-tags"></div>
+
+          </div>
+    
+          <div class="right-section">
+            <div class="image-upload">
+              <label for="image-input" >
+                
+                <img src="../images/up.png" alt="העלאת תמונה" class="preview-img"  />
+              </label>
+              <input type="file" id="image-input" accept="image/*" hidden />
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </main>
+
+
+    <footer>
+         <div class="social-grid">
+          <a href="https://www.facebook.com/pinterest" target="_blank" class="social-box">
+            <img src="../images/facebook.png" alt="Facebook" />
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.youtube.com/@pinterest" target="_blank" class="social-box">
+            <img src="../images/you.png" alt="YouTube" />
+            <span>YouTube</span>
+          </a>
+          <a href="https://www.tiktok.com/@pinterest" target="_blank" class="social-box">
+            <img src="../images/tiktok.png" alt="TikTok" />
+            <span>TikTok</span>
+          </a>
+          <a href="https://www.instagram.com/pinterest/" target="_blank" class="social-box">
+            <img src="../images/instergram.png" alt="Instagram" />
+            <span>Instagram</span>
+          </a>
+        </div>
+      </footer>
+    <script src="create.js"></script>
+    <script src="../common/common.js"></script>
+</body>
+</html>

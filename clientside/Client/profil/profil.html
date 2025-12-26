@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>אזור אישי - פינים שמורים</title>
+    <link rel="stylesheet" href="profil.css" />
+    <link rel="stylesheet" href="../common/common.css" />
+</head>
+<body>
+  <header>
+        <img src="../images/pinterst.png" class="imglogo"  />
+     <nav>
+        <a href="../home/home.html">HOME</a>
+        <a href="profil.html">PROFIL</a>
+        <a href="#" id="logoutBtn">LOG OUT</a>
+        <a href="../create/create.html" id="create">CREATE</a>
+      </nav>
+      <div class="search-bar">
+          <input type="text" placeholder="חיפוש ..." />
+          <button>🔍</button>
+        </div>
+        
+    </header>
+
+   <main>
+    <button class="update-user-btn"  onclick="openUpdateUserModal(123)">✏️ עדכן פרטי משתמש</button>
+      <section id="boardsSection">
+        <h2>הלוחות שלי</h2>
+        <button id="addBoardBtn">➕ הוסף לוח</button>
+        <div id="boardsContainer" class="boards-grid"></div>
+      </section>
+    <div id="saveModal" class="hidden">
+  <div class="modal-box">
+    <button id="closeModal">✖</button>
+    <div id="saveModalContent"></div>
+    <button id="savePinToBoardsBtn">שמור</button>
+  </div>
+</div>
+
+      <hr />
+    <!-- מודאל הצגת פינים של לוח -->
+<div id="boardPinsModal" class="modal hidden">
+  <div class="modal-box">
+    <button id="closeBoardPinsModal" class="close-btn">❌</button>
+    <h3 id="boardPinsTitle"></h3>
+    <div id="boardPinsContent" class="pins-grid"></div>
+  </div>
+</div>
+
+      <section id="unsortedPinsSection">
+        <h2>הפינים שלי</h2>
+        <div id="unsortedPinsContainer" class="pins-grid"></div>
+      </section>
+      <div id="boardsContainer"></div>
+<div id="unsortedPinsContainer"></div>
+
+
+<!-- מודאל שמירה -->
+<div id="saveModal" class="hidden">
+  <div id="saveModalContent"></div>
+  <button id="savePinToBoardsBtn">שמור</button>
+  <button id="closeModal">סגור</button>
+</div>
+
+
+
+    </main>
+
+
+ <footer>
+        <div class="social-grid">
+          <a href="https://www.facebook.com/pinterest" target="_blank" class="social-box">
+            <img src="../images/facebook.png" alt="Facebook" />
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.youtube.com/@pinterest" target="_blank" class="social-box">
+            <img src="../images/you.png" alt="YouTube" />
+            <span>YouTube</span>
+          </a>
+          <a href="https://www.tiktok.com/@pinterest" target="_blank" class="social-box">
+            <img src="../images/tiktok.png" alt="TikTok" />
+            <span>TikTok</span>
+          </a>
+          <a href="https://www.instagram.com/pinterest/" target="_blank" class="social-box">
+            <img src="../images/instergram.png" alt="Instagram" />
+            <span>Instagram</span>
+          </a>
+        </div>
+      </footer>
+    
+<div id="updateUserModal" class="modal" style="display:none">
+  <div class="modal-content">
+    <span class="close" onclick="closeUpdateUserModal()">&times;</span>
+    <h2>עדכון פרטי משתמש</h2>
+    <form id="updateUserForm">
+      <input type="email" name="email" placeholder="אימייל חדש" />
+      <input type="text" name="name" placeholder="שם מלא" />
+      <!-- תוכלי להוסיף כאן שדות נוספים -->
+      <button type="submit">שמור</button>
+    </form>
+  </div>
+</div>
+<script src="profil.js"></script>
+    <script src="../common/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffe6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.card h2 {
+  color: #e60023;
+  font-size: 28px;
+  margin-bottom: 1rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  transition: 0.3s;
+}
+
+.tabs button.active {
+  color: #e60023;
+  border-bottom: 2px solid #e60023;
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  transition: border 0.3s;
+}
+
+form input:focus {
+  border-color: #e60023;
+  outline: none;
+}
+
+form button {
+  background-color: #e60023;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #c2001d;
+}
+
+#message {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+}
+
+#email {
+  transition: all 0.3s ease-in-out;
+}
+#toggleMode {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#toggleMode:hover {
+  background-color: #ddd;
+}

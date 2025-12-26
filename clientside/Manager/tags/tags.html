@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <title>ניהול תגים</title>
+  <link rel="stylesheet" href="tags.css" />
+      <link rel="stylesheet" href="../common/common.css" />
+
+</head>
+<body>
+ <header>
+   <nav class="admin-menu">
+        <ul>
+                <li><a href="../users/users.html">👤 ניהול משתמשים</a></li>
+                <li><a href="../pins/pins.html">📌 ניהול פינים</a></li>
+                <li><a href="../tags/tags.html">🏷️ ניהול תגים</a></li>
+                <li><a href="../home/home.html">🏠 עמוד ניהול ראשי</a></li>
+          </ul>
+</nav>
+
+ </header>
+  <main>
+    <section id="addTagSection">
+      <h2>➕ הוספת תג חדש</h2>
+      <input type="text" id="newTagInput" placeholder="הכנס שם תג" />
+      <button id="addTagBtn">הוסף תג</button>
+    </section>
+
+    <section id="tagsListSection">
+      <h2>📋 כל התגים</h2>
+      <ul id="tagsList"></ul>
+          <button id="loadMoreTagsBtn">הצג עוד</button>
+
+    </section>
+  </main>
+
+  <script src="tags.js"></script>
+      <script src="../common/common.js"></script>
+
+</body>
+</html>
