@@ -1,6 +1,6 @@
 # Pinterest-style Web Application
 
-![Project Screenshot](./screenshot.png)
+![Project Screenshot](https://github.com/neomi12345678/Pinterest/blob/main/screenshot.png)
 
 Visual content management web application inspired by Pinterest.
 Built with HTML, CSS, JavaScript, and Node.js.
