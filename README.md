@@ -1,6 +1,6 @@
 # Pinterest-style Web Application
 
-![Project Screenshot](clientside\Client\images\Screenshot.png)
+![Project Screenshot](clientside\Client\images\screenshot)
 
 Visual content management web application inspired by Pinterest.
 Built with HTML, CSS, JavaScript, and Node.js.
